@@ -7,7 +7,7 @@ import DeleteBtn from "../components/DeleteBtn"
 const BlogDetailsPage = ({ params: { id } }) => {
     return ( 
         <div className="card">
-            <Link href='/' className="btn btn-back">Back to All Blogs</Link>
+            <Link href='/' className="btn-back">Back to All Blogs</Link>
             <Suspense fallback={<div>Loading blog...</div>}>
                 <BlogMeta id={id} />
             </Suspense>

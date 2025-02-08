@@ -3,13 +3,15 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  background-color: #fff7cc;
+  background-color: cadetblue;
 }
 h2 {
-  color: rgb(139, 139, 139);
+  color: rgb(23, 128, 132);
+  text-shadow: 4px 1px 2px #dad9d9;
+
 }
 b {
-  color: cadetblue;
+  color: rgb(23, 128, 132);
 }
 .container, .header {
   max-width: 1100px;
@@ -18,7 +20,7 @@ b {
   padding: 10px 45px;
 }
 .header {
-  background-color: cadetblue;
+  background-color: rgb(23, 128, 132);
   color: #fff;
   border-bottom: 5px solid #fceb9f;
   -webkit-user-select: none; /* Safari */
@@ -27,7 +29,7 @@ b {
 }
 .header-subtext {
   font-family: cursive;
-  color: silver;
+  color: #fceb9f;
   font-size: 16px;
 }
 .item-subheader {
@@ -84,7 +86,7 @@ b {
 .search-button {
   padding: 10px 16px;
   margin-left: 8px;
-  background-color: cadetblue;
+  background-color: rgb(23, 128, 132);
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -92,14 +94,14 @@ b {
   cursor: pointer;
 }
 .search-button:hover {
-  background-color: rgb(79, 132, 133);
-  box-shadow: 0 0 0 2px rgba(0, 112, 243, 0.2);
+  background-color: rgb(47, 154, 158);
+  box-shadow: 0 0 0 2px rgb(23, 128, 132);
 }
 .search-input:focus,
 .search-button:focus {
   outline: none;
   border-color: cadetblue;
-  box-shadow: 0 0 0 2px rgba(0, 112, 243, 0.2);
+  box-shadow: 0 0 0 2px rgb(23, 128, 132);
 }
 
 .card-container {
@@ -123,7 +125,7 @@ b {
   padding: 15px;
   border-radius: 4px;
   text-decoration: none;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease-in-out;
 }
 .card-list a:hover {
@@ -163,7 +165,7 @@ b {
 
 .btn {
   display: inline-block;
-  background-color: cadetblue;
+  background-color: rgb(23, 128, 132);
   color: #fff;
   padding: 10px 15px;
   border: none;
@@ -174,8 +176,8 @@ b {
 }
 
 .btn:hover {
-  background-color: rgb(79, 132, 133);
-  box-shadow: 0 0 0 2px rgba(0, 112, 243, 0.2);
+  background-color: rgb(47, 154, 158);
+  box-shadow: 0 0 0 2px rgb(23, 128, 132);
   color: #fff;
 }
 
@@ -190,6 +192,11 @@ b {
   cursor: pointer;
   text-decoration: none;
   margin-bottom: 16px;
+  box-shadow: 0 0 0 2px rgba(23, 128, 132, 0.6);
+}
+.btn-back:hover {
+  box-shadow: 0 0 0 2px rgb(23, 128, 132);
+  color: rgb(23, 128, 132);
 }
 .card {
   border: 1px solid #ccc;
@@ -198,14 +205,18 @@ b {
   margin: 15px;
   background-color: #fff;
   color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  font-size: 14px;
 }
 
 .create-form {
-  background-color: cadetblue;
+  background-color: rgb(121, 179, 181);
   display: inline-block;
   margin-top: 8px;
   padding: 20px;
   border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  width: 50%;
 }
 .create-form form {
   margin-top: 10px;
@@ -222,15 +233,20 @@ b {
   padding: 8px;
   border-radius: 4px;
   border: 0;
-  width: 350px;
+  /* width: 350px; */
 }
 .create-form form textarea {
   height: 120px;
 }
+textarea {
+  resize:vertical;
+  max-height: 200px;
+  min-height: 42px;
+}
 .create-form form label span {
   margin-bottom: 10px;
 }
-button {
+/* button {
   padding: 8px;
   border-radius: 4px;
   font-size: 16px;
@@ -245,7 +261,7 @@ button:hover{
 }
 button:active {
   background: #666;
-}
+} */
 
 .loader {
   display: flex;
@@ -265,4 +281,19 @@ button:active {
   to {
     transform: rotate(360deg);
   }
+}
+
+input[type=text], select, form input[type=text], form textarea{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.blog-metadata {
+  font-size: 14px !important;
 }

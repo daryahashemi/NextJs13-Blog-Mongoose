@@ -32,6 +32,6 @@ $ npm run dev
 
 ## Screenshot of the Application
 <p>
-  <img src="screenshot1.jpg" style="border-radius: 10px" width="500">
-  <img src="screenshot2.jpg" style="border-radius: 10px" width="500">
+  <img src="screenshot3.jpg" style="border-radius: 10px" width="500">
+  <img src="screenshot4.jpg" style="border-radius: 10px" width="500">
 </p>

@@ -9,7 +9,7 @@ const Header = () => {
           </Link>
         </div>
         <div className="item-subheader">
-        <div className="header-subtext" >NextJs 13 Application</div>
+          <div className="header-subtext" >NextJs 13 Application</div>
           <div className='links'>
             <Link href='/'>Blogs</Link>
             <Link href='/newblog'>New Blog</Link>
